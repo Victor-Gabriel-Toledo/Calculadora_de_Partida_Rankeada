@@ -1,6 +1,9 @@
+//função com entrada de dados
 function rankeada(vitorias, derrotas){
     let soma = vitorias - derrotas
     let raking
+
+    //calcula o ranking
     if(soma <= 10){
         raking = "Ferro"
     }
@@ -26,5 +29,8 @@ function rankeada(vitorias, derrotas){
     return `O herói tem saldo de ${vitorias} vitórias e seu nível é ${raking}`
 }
 
+//retorna o resultado da função
 let resultado = rankeada(200, 11)
+
+//menssagem de saída
 console.log(resultado)
